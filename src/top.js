@@ -4,11 +4,19 @@ import data from "./data/lol/lol.js";
 const arrDataLolTotal = Object.values(data.data);
 const buttonfirstUser = document.getElementById("Top5"); //Constantes dentro del DOM
 const containerTopTeam = document.getElementById("topchampions");
+<<<<<<< HEAD
+=======
+
+>>>>>>> 88d64097500a90cadebc5f586b0b282e8e8b5d39
 
 //función  para  top cinco//
 const getTopFive = (array) => {
   const newArray = [];
   for (let i = 0; i < array.length; i++) {
+<<<<<<< HEAD
+=======
+
+>>>>>>> 88d64097500a90cadebc5f586b0b282e8e8b5d39
     newArray.push({
       name: array[i].name,
       title: array[i].title,
@@ -16,6 +24,10 @@ const getTopFive = (array) => {
       hp: array[i].stats.hp,
       info: array[i].info,
     });
+<<<<<<< HEAD
+=======
+
+>>>>>>> 88d64097500a90cadebc5f586b0b282e8e8b5d39
   }
   const newArrayOrder = newArray.sort((a, b) => {
     if (a.hp < b.hp) {
@@ -27,10 +39,18 @@ const getTopFive = (array) => {
   return newArrayOrder.slice(0, 5);
 };
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 88d64097500a90cadebc5f586b0b282e8e8b5d39
 const arrDataLolTopTeam = getTopFive(arrDataLolTotal);
 const showTopTeam = (array) => {
   for (let i = 0; i < array.length; i++) {
     containerTopTeam.innerHTML += ` 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 88d64097500a90cadebc5f586b0b282e8e8b5d39
         <div class="card-link">
           <figure>
           <div class="frontalCard">
@@ -50,5 +70,10 @@ const showTopTeam = (array) => {
         </div>`;
   }
 };
+<<<<<<< HEAD
+=======
+
+buttonfirstUser.addEventListener("click", showTopTeam(arrDataLolTopTeam));
+>>>>>>> 88d64097500a90cadebc5f586b0b282e8e8b5d39
 
 buttonfirstUser.addEventListener("click", showTopTeam(arrDataLolTopTeam));
